@@ -4,7 +4,7 @@ export interface SocialLink {
   url: string
   handle: string
   description: string
-  icon: "linkedin" | "github" | "instagram" | "mail"
+  icon: "linkedin" | "github" | "instagram" | "mail" | "location"
 }
 
 export const PERSONAL_INFO = {
@@ -52,5 +52,13 @@ export const SOCIAL_LINKS: SocialLink[] = [
     handle: "shashwatbsingh@gmail.com",
     description: "Direct conversations, internship inquiries, and engineering collaborations",
     icon: "mail",
+  },
+  {
+    id: "location",
+    name: "Base & Location",
+    url: "https://maps.google.com/?q=Bengaluru,+Karnataka,+India",
+    handle: "Bengaluru, India",
+    description: "Silicon Valley of India • Open to on-site and remote opportunities",
+    icon: "location",
   },
 ]

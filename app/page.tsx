@@ -101,11 +101,11 @@ export default function HomePage() {
                   <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#EDE4DB] border border-[#CEB8A5]/40 flex flex-col justify-end p-6">
                     {/* Shashwat's Real Picture */}
                     <Image
-                      src="/profile.jpg"
+                      src="/images/shashwat-outdoor-profile.jpg"
                       alt={PERSONAL_INFO.name}
                       fill
                       priority
-                      className="object-cover object-top transition-transform duration-500 hover:scale-105"
+                      className="object-cover object-center transition-transform duration-500 hover:scale-105"
                     />
 
                     {/* Gradient Overlay for Readable Text */}

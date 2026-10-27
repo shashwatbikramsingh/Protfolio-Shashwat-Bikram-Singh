@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { ArrowUpRight, Mail } from "lucide-react"
+import { ArrowUpRight, Mail, MapPin } from "lucide-react"
 import { SOCIAL_LINKS, PERSONAL_INFO } from "@/data/profile"
 import { LinkedInIcon, InstagramIcon, GitHubIcon } from "@/components/ui/social-icons"
 
@@ -13,6 +13,8 @@ export default function Footer() {
         return <GitHubIcon className="h-4 w-4" />
       case "instagram":
         return <InstagramIcon className="h-4 w-4" />
+      case "location":
+        return <MapPin className="h-4 w-4" />
       default:
         return <Mail className="h-4 w-4" />
     }

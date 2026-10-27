@@ -193,7 +193,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
-                        placeholder="Alex Morgan"
+                        placeholder="Your full name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full rounded-xl border border-[#CEB8A5] bg-[#FFFFFF]/80 px-4 py-3 text-sm text-[#2C1E18] placeholder-[#846353]/50 focus:border-[#2C1E18] focus:outline-none transition-colors"
@@ -207,7 +207,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         required
-                        placeholder="alex@domain.com"
+                        placeholder="name@domain.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full rounded-xl border border-[#CEB8A5] bg-[#FFFFFF]/80 px-4 py-3 text-sm text-[#2C1E18] placeholder-[#846353]/50 focus:border-[#2C1E18] focus:outline-none transition-colors"
@@ -280,7 +280,7 @@ export default function ContactPage() {
               Alternative Channels
             </span>
             <h3 className="font-serif text-2xl font-bold text-[#2C1E18]">
-              Connect on LinkedIn, GitHub & Instagram
+              Connect on LinkedIn, GitHub & Direct Channels
             </h3>
           </div>
           <SocialConnector showDescription={false} />

@@ -1,5 +1,5 @@
 import React from "react"
-import { ArrowUpRight, Mail } from "lucide-react"
+import { ArrowUpRight, Mail, MapPin } from "lucide-react"
 import { SOCIAL_LINKS } from "@/data/profile"
 import { LinkedInIcon, InstagramIcon, GitHubIcon } from "@/components/ui/social-icons"
 
@@ -12,6 +12,8 @@ export default function SocialConnector({ showDescription = false }: { showDescr
         return <GitHubIcon className="h-5 w-5" />
       case "instagram":
         return <InstagramIcon className="h-5 w-5" />
+      case "location":
+        return <MapPin className="h-5 w-5" />
       default:
         return <Mail className="h-5 w-5" />
     }

@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft, ArrowUpRight, Code, Cpu, Dumbbell, Headphones, Heart, Mountain, Sparkles, Terminal, Trophy, User } from "lucide-react"
 import { PERSONAL_INFO } from "@/data/profile"
 import { SKILL_CATEGORIES } from "@/data/experience"
@@ -97,6 +98,21 @@ export default function AboutPage() {
 
           {/* Quick Snapshot Card */}
           <div className="md:col-span-4 cream-gradient-card rounded-3xl p-6 border border-[#CEB8A5]/60 space-y-4">
+            {/* Shashwat's Profile Picture */}
+            <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#EDE4DB] border border-[#CEB8A5]/40 shadow-sm">
+              <Image
+                src="/images/shashwat-outdoor-profile.jpg"
+                alt={PERSONAL_INFO.name}
+                fill
+                priority
+                className="object-cover object-center transition-transform duration-500 hover:scale-105"
+              />
+              <div className="absolute top-3 right-3 rounded-full bg-[#2C1E18]/85 backdrop-blur-md px-3 py-1 text-[10px] font-mono text-[#FAF6F0] border border-[#FAF6F0]/20 flex items-center gap-1.5 shadow-md">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Open to Roles</span>
+              </div>
+            </div>
+
             <h4 className="font-serif text-xl font-bold text-[#2C1E18]">
               Quick Facts
             </h4>
